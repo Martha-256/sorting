@@ -5,17 +5,14 @@ function sorting(){
      let odd = [];
      let chars = [];
 
-     for(var i=0; i<array1.length; i++){
-
-        if(isNaN(array1[i])){
-            chars.push(array1[i]);
-        }else{
-
+    for(var i=0; i<array1.length; i++){
+    if(isNaN(array1[i])){
+            chars.push(array1[i]);}
+    else{
         if((array1[i])%2===0){
-
-            even.push(array1[i]);
-
-        }else{odd.push(array1[i]) }
+            even.push(array1[i]);}
+        else{
+        odd.push(array1[i]); }
     }
 }
 var array_sort = {Evens:even, Odds: odd, Chars: chars}
